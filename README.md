@@ -1,41 +1,104 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+**Documentation du Projet de B2_Avetis**
 
-## Getting Started
+---
 
-First, run the development server:
+### 1. Introduction
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Ce document présente la documentation complète du projet de développement d'un site web de répertoire d'adresses. Le projet vise à fournir une plateforme permettant aux utilisateurs d'ajouter, de consulter et de filtrer des adresses avec des informations associées. Il est conçu pour être évolutif, en commençant par des fonctionnalités de base et en ajoutant progressivement des fonctionnalités avancées.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 2. Environnement de Développement
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+Le projet utilise les outils suivants pour le développement :
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+- **Éditeur de Code** : Visual Studio Code
+- **Framework Frontend** : Next.js
+- **Base de Données** : MongoDB
+- **Dépendances NPM** : 
+  - mongoose
+  - yup
+  - axios
+  - formik
+  - clsx
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+### 3. Configuration
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+1. **Fichier d'Environnement** :
+   - Créez un fichier `.env.local` à la racine du projet.
+   - Ajoutez la ligne suivante au fichier pour spécifier l'URL de la base de données locale :
+     ```
+     DB_URL=[URL DE VOTRE MONGODB]/DB_SEB
+     ```
 
-## Learn More
+2. **Installation des Dépendances NPM** :
+   - Exécutez la commande suivante dans le terminal pour installer les dépendances nécessaires :
+     ```
+     npm install mongoose yup axios formik clsx
+     ```
 
-To learn more about Next.js, take a look at the following resources:
+### 4. Composants
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+#### a. `Button.jsx`
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Composant utilisé pour afficher des boutons interactifs dans l'interface utilisateur.
 
-## Deploy on Vercel
+#### b. `Form.jsx`
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Composant qui encapsule les éléments de formulaire et gère la validation des données.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+#### c. `FormField.jsx`
+
+Composant représentant un champ de formulaire individuel avec des étiquettes et des zones de saisie.
+
+#### d. `Title.jsx`
+
+Composant utilisé pour afficher des titres ou des en-têtes dans différentes parties de l'application.
+
+### 5. Pages
+
+#### a. `edit.jsx`
+
+Page permettant aux utilisateurs de modifier les informations d'une adresse existante.
+
+#### b. `details.jsx`
+
+Page affichant les détails complets d'une adresse spécifique.
+
+#### c. `create.jsx`
+
+Page d'en-tête de l'application, contenant les éléments de navigation principaux.
+
+#### d. `_app.jsx`
+
+Point d'entrée pour personnaliser le comportement global de l'application Next.js.
+
+#### e. `document.jsx`
+
+Page utilisée pour afficher des documents associés aux adresses répertoriées.
+
+#### f. `index.jsx`
+
+Page d'accueil de l'application, présentant un aperçu des fonctionnalités principales.
+
+#### g. `todos.jsx`
+
+Page affichant une liste de tâches à faire associées à l'administration de l'application.
+
+### 6. Difficultés Rencontrées
+
+J'ai rencontré des difficultés initiales pour m'adapter à la base de données MongoDB en raison de son modèle de données flexible et de ses requêtes spécifiques. Cependant, avec un apprentissage approfondi et des tests rigoureux, j'ai réussi à intégrer efficacement la base de données dans le projet.
+
+### 7. Gestion du Temps
+
+En raison d'une situation personnelle imprévue, j'ai dû m'absenter durant deux semaines en raison d'un décès familial à l’étranger. Cela a entraîné un retard dans la réalisation du projet, car je n'ai pas pu consacrer le temps initialement prévu au développement.
+
+### 8. Tâches Planifiées
+
+Les tâches du projet sont réparties sur une période de quatre semaines, en prenant en compte ces 2 semaines de retard.
+
+### 9. Conclusion
+
+Ce document fournit une vue d'ensemble complète du projet de développement du site web de répertoire d'adresses. Il inclut la configuration de l'environnement de développement, les détails des composants et des pages de l'application, ainsi que les difficultés rencontrées, la gestion du temps et les tâches planifiées pour l'achèvement du projet.
+
+---
+
 # Sebastien2709-Sebastien-Germano_ProjectB2-Avetis
