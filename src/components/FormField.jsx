@@ -4,7 +4,7 @@ import { ErrorMessage, Field } from "formik";
 export const FormField = ({ className, name, ...otherProps }) => (
   <div className="flex flex-col">
     {" "}
-    {/* Wrapper div for better alignment */}
+    {}
     <Field
       name={name}
       className={clsx(
