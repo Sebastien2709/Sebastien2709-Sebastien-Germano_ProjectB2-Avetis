@@ -6,10 +6,10 @@ export const Form = ({ className, ...otherProps }) => (
     noValidate
     className={clsx(
       "flex flex-col gap-4",
-      "p-6", // Ajout de padding
-      "bg-white", // Arrière-plan blanc
-      "rounded-lg", // Coins arrondis
-      "shadow-md", // Ombre douce
+      "p-6", 
+      "bg-white", 
+      "rounded-lg", 
+      "shadow-md", 
       className
     )}
     {...otherProps}
