@@ -56,7 +56,7 @@ const Details = () => {
       <p>Ville: {todo.Ville}</p>
       <p>Code postal: {todo.CodePostal}</p>
       <p>Pays: {todo.Pays}</p>
-      {/* Ajoutez ici d'autres informations de la boutique si nécessaire */}
+      {}
 
       <div className="button-group">
         <Button onClick={handleDelete}>Delete</Button>
